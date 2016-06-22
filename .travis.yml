@@ -1,0 +1,11 @@
+language: python
+python:
+- '2.7'
+deploy:
+  provider: pypi
+  user: xiachufang
+  password:
+    secure: ctqrvH6wsHRXanGcUPfLEBlURU+nqqkIrpDI97Y9Qp+7XZkJCToanlPYS2NJnguInWbtlsYcttcnz99XSXVdxEqSTZ4cAl24FMbvrPtUTHS05yb8tz2blsHpwk5+/wZlrCK5bJQ5n981mgBfLIOvUYLQcJlTCw1ZEVttbT7EXznm2kLucKl8ICVipZbGW9BzmDz9gsztAmJ1h6ZZYy79uuctOcNhl/hjV2KuRVHhO1OMc04fGR86dKrH1vgE07A8gVvXZPr4mtVlGRUKtY8gBZoGfwDp64tW7vBwjS3XFoNNjIjNLeCXKZj0Hs8zGab1oidMjV7hyO7yVgWhYZoZCIlL8kZM/9tmAeX2r5AD5+q/IGHg4pOhYmjGlnQsgwvvYv2VHwWOf48lKLgMKsvoc2OQmX1du0MikuHQuZYRtCqNfxrvDFdJElWa/uzBkm+T8i9pIbNS72rsu7IwqJnbGyc370by2TtPTnG0o4eHqihwo8LDNGE0ZxUs61d1VCQRDHBd+pfesn9xWigN8bRpzD/x4MozaK2DpXZ6g2JiyzUjgpObrjMIkq1sRhKRXcmkKBqlZHCfOC+hI5G4AUICp6aZBPH31MDxEnTGd/aClfLxTmze9YEaRuCGG8MA0o6u1e35yChjOZkq+NOjhsXFtnO27Uu+a0Ex9MwfED/o7rc=
+  on:
+    distributions: sdist bdist_wheel
+    repo: xiachufang/faster-hash
