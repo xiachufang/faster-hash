@@ -7,7 +7,7 @@ script:
 before_deploy:
 - pip install twine cibuildwheel==0.7.0
 - python setup.py sdist
-- CIBW_SKIP="cp34-* cp35-* *_i686" cibuildwheel --output-dir dist
+- CIBW_SKIP="cp33-* cp34-* cp35-* *_i686" cibuildwheel --output-dir dist
 deploy:
   provider: script
   script: twine upload dist/*
