@@ -5,7 +5,7 @@ s = uuid.uuid4()
 setup1 = 'from faster_hash import fnv1a'
 code = 'fnv1a("%s")' % s
 
-print timeit.timeit(code, setup=setup1)
+print(timeit.timeit(code, setup=setup1))
 
 
 setup2 = '''
@@ -17,4 +17,4 @@ def fnv1a(s):
         h = (h * prime) & 0xffffffff
     return h
 '''
-print timeit.timeit(code, setup=setup2)
+print(timeit.timeit(code, setup=setup2))
