@@ -1,5 +1,7 @@
-build
+*.c
+*.egg-info
 *.so
+.eggs
+build
 dist
 MANIFEST
-*.egg-info
