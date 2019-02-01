@@ -69,7 +69,22 @@ cpdef long fnv1a(char* s):
     cdef long h = 0x811c9dc5
     cdef long f = 0xffffffff
     cdef long n = len(s)
-    cdef int  i
+    cdef int i
+    for i in range(n):
+        h = (h ^ s[i] * prime) & f
+    return h
+'''
+
+# iteration 4
+# ensure 'i' and 'n' are same long type
+v4 = '''# cython: language_level=2
+
+cpdef long fnv1a(char* s):
+    cdef long prime = 0x01000193
+    cdef long h = 0x811c9dc5
+    cdef long f = 0xffffffff
+    cdef long n = len(s)
+    cdef long i
     for i in range(n):
         h = (h ^ s[i] * prime) & f
     return h
@@ -91,3 +106,4 @@ benchmark(0, v0, b='')
 benchmark(1, v1)
 benchmark(2, v2)
 benchmark(3, v3)
+benchmark(4, v4)
