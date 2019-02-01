@@ -1,9 +1,16 @@
-language: python
 sudo: required
 services:
 - docker
+language: python
+python:
+- "2.7"
+- "3.6"
+install:
+- pip install -e .
 script:
-- echo OK
+- python -V
+- python -c 'import doctest, faster_hash; print(doctest.testmod(faster_hash))'
+- python benchmark.py
 before_deploy:
 - pip install twine cibuildwheel==0.7.0
 - python setup.py sdist
