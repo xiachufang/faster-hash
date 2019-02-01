@@ -7,5 +7,5 @@ cpdef long fnv1a(char* s):
     cdef long n = len(s)
     cdef long i
     for i in range(n):
-        h = (h ^ s[i] * prime) & f
+        h = ((h ^ s[i]) * prime) & f
     return h

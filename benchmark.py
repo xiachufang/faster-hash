@@ -42,7 +42,7 @@ cpdef long fnv1a(char* s):
     cdef long h = 0x811c9dc5
     cdef char c
     for c in s:
-        h = (h ^ c * prime) & 0xffffffff
+        h = ((h ^ c) * prime) & 0xffffffff
     return h
 '''
 
@@ -56,7 +56,7 @@ cpdef long fnv1a(char* s):
     cdef long f = 0xffffffff
     cdef char c
     for c in s:
-        h = (h ^ c * prime) & f
+        h = ((h ^ c) * prime) & f
     return h
 '''
 
@@ -71,7 +71,7 @@ cpdef long fnv1a(char* s):
     cdef long n = len(s)
     cdef int i
     for i in range(n):
-        h = (h ^ s[i] * prime) & f
+        h = ((h ^ s[i]) * prime) & f
     return h
 '''
 
@@ -86,7 +86,7 @@ cpdef long fnv1a(char* s):
     cdef long n = len(s)
     cdef long i
     for i in range(n):
-        h = (h ^ s[i] * prime) & f
+        h = ((h ^ s[i]) * prime) & f
     return h
 '''
 
