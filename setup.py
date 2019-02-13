@@ -1,15 +1,7 @@
 from setuptools import setup
 from setuptools.extension import Extension
 
-USE_CYTHON = False   # command line option, try-import, ...
-
-ext = '.pyx' if USE_CYTHON else '.c'
-
-extensions = [Extension("faster_hash", ["faster_hash"+ext])]
-
-if USE_CYTHON:
-    from Cython.Build import cythonize
-    extensions = cythonize(extensions)
+extensions = [Extension("faster_hash", ["faster_hash.pyx"])]
 
 setup(
     name='faster_hash',
@@ -22,5 +14,6 @@ setup(
     classifiers=(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3'
-    )
+    ),
+    setup_requires=['Cython >= 0.28'],
 )

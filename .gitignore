@@ -1,5 +1,9 @@
-build
-*.so
-dist
-MANIFEST
+*.c
 *.egg-info
+*.html
+*.so
+.eggs
+build
+dist
+faster_hash_*.pyx
+MANIFEST
