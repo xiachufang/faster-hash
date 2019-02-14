@@ -29,6 +29,3 @@ env:
     - TWINE_USERNAME=xiachufang
     # TWINE_PASSWORD
     - secure: X6cWcdI4AHUusPRNVPqJPVQYhmS1xUEtOx1cPyHfrm7Qbv5ZIPqsPW7MeF5y/ZWK5ThGx58/Atzh8vc0kq77do2+U/N9r1f2+iDxoEew1uzvfe4LZa3NZ56FncFt1vclEeSxW2tanjsudAL8asC8h7iO8/lM53anHaypLEFb+A8N3fqVMJ7M2rIAS2fhUILFivUcpPDEqjiKxdKA7YjH9UtdTl1EIp5l/B/mi40Wtt780x2or+J1cLSHXbpBpEe69CIOBZ4jTshXiqOrBjvUgAsff7X7upoly1uUeLiibsUqKEydEkLg/9PLiDgmyJZLaw2y33gQhK9FLE41jf//VG5Hjjb/qcDUIBGMljqIinf803agtnQkLh7mtKVujHYJWD6iexYx8qWoKngNKsCR9OY4TLOpM9vh+PP+BV2tZ+urYVXgvSSYcwox6t2PDu+9ruI1tPmen+zECdv7ByPIpflfk0Bdnvgg4bS09jB7LV/tcpyovKSVZdlFUAd9hesJZi2CrBPhmFZRzfA60o+JumrmUHjx9n9bd5S4xgzQiHKaNVn4YFWdeLLybGuUES1WxSJSjmZ/M7TbxJ+nIUfqiufYLoXnvH5tLFZie6OT/binFNL6/e8kOF6O9PK0vDk0+bFfGib2BBmtdRI9MfkinJvG/QSsFtqcobCCq+m75E0=
-branches:
-  only:
-    - master
