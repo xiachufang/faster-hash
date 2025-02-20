@@ -5,7 +5,7 @@ extensions = [Extension("faster_hash", ["faster_hash.pyx"])]
 
 setup(
     name='faster_hash',
-    version='0.0.4',
+    version='0.0.5',
     url='https://github.com/xiachufang/faster-hash',
     description='fnv1a in Cython',
     author='gfreezy',
@@ -15,5 +15,5 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3'
     ),
-    setup_requires=['Cython >= 0.28'],
+    setup_requires=['Cython >= 0.28,<=3.0.12'],
 )
