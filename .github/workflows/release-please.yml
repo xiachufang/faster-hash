@@ -6,7 +6,7 @@ on:
 name: release please
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: GoogleCloudPlatform/release-please-action@v2
         id: release
@@ -15,12 +15,12 @@ jobs:
           release-type: python
           package-name: faster-hash
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
 
       - name: Publish / Prepare python
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: 3.7
 
