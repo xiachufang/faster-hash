@@ -19,7 +19,7 @@ def fnv1a(s):
 
 print('baseline:', timeit.timeit(stmt="fnv1a(s)", setup=baseline + 's = "{}"'.format(u)))
 
-# ---------
+# --------
 
 # initial cython implementation
 v0 = '''# cython: language_level=2
