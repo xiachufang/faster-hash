@@ -4,8 +4,8 @@ from setuptools.extension import Extension
 extensions = [Extension("faster_hash", ["faster_hash.pyx"])]
 
 setup(
-    name='faster_hash',
-    version='0.1.1',
+    name='xiachufang-faster-hash',
+    version='0.0.5',
     url='https://github.com/xiachufang/faster-hash',
     description='fnv1a in Cython',
     author='gfreezy',

@@ -13,7 +13,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: python
-          package-name: faster-hash
+          package-name: xiachufang-faster-hash
 
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
